@@ -66,10 +66,11 @@ namespace Serie_I
                 result_division = a / b;
                 reste = result_division * b - a;  // j'aurais pu faire avec modulo %
                 Console.WriteLine($" resultat de la division entiere {a} = {b} * {result_division} + {reste} ");
+                break;
             }
             else
             {
-                Console.WriteLine($" result {a} / {b} impossible ");
+                Console.WriteLine($" result {a} {operation} {b} impossible ");
             }
             
             
@@ -86,9 +87,9 @@ namespace Serie_I
             else 
             {
                 Console.WriteLine($" Operation {a} ^ {b} est invalide ");
-            }
-        }
+                    }
     }
+}
 }
 
 

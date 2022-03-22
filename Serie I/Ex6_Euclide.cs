@@ -10,8 +10,16 @@ namespace Serie_I
     {
         public static int Pgcd(int a, int b)
         {
-            //TODO
-            return -1;
+            int r;
+            do
+            {
+                r = a % b;
+                a = b;
+                b = r;
+            } while (r != 0);
+            
+            return a;
+                     
         }
 
         public static int PgcdRecursive(int a, int b)
