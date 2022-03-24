@@ -17,7 +17,7 @@ namespace Serie_IV
             {
                 _agenda = new Dictionary<DateTime, TimeSpan>();          // initialization du dictionnaire
                 DateTime begindate = new DateTime(2000,01,01);
-                DateTime enddate = new DateTime(2049,12,31);  yrydryjh
+                DateTime enddate = new DateTime(2049,12,31);
             }
 
         public bool IsEmpty()
