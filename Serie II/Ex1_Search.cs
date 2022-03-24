@@ -46,9 +46,9 @@ namespace Serie_II
             if (size_t != 0)
             {
                 debut = 0;
-                fin   = size_t;
+                fin   = size_t-1;
 
-                while (found = false && debut<=fin)
+                while (found == false && debut<=fin)
                 {
                     milieu = (debut + fin) / 2;
                         if (tableau[milieu] == valeur)
@@ -79,11 +79,11 @@ namespace Serie_II
 
                 if (found == true)
                 {
-                    Console.WriteLine(" la valeur recherchée ", valeur, " est au rang ", milieu);
+                    Console.WriteLine($" la valeur recherchée  { valeur}  est au rang  {milieu} ");
                 }
                 else
                 {
-                    Console.WriteLine(" la valeur recherchée " , valeur, " est absente du tableau ");
+                    Console.WriteLine($" la valeur recherchée  {valeur}  est absente du tableau " );
                 }
             }
             else

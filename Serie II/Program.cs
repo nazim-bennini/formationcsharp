@@ -10,7 +10,8 @@ namespace Serie_II
     {
         static void Main(string[] args)
         {
-
+            int N = 100;
+            int[] X= new int [N];
             int[] array = new int[] { 1, -5, 10, 3, 0, 4, 2, -7 };
             int[] array_order = new int[] { -7, -5, 0, 1, 2, 3, 4, 10 };
 
@@ -22,9 +23,12 @@ namespace Serie_II
             //    tableau[j] = random.nextInt(100);
             //}
 
-            BinarySearch(int[] array_order, 0);
+            Search.BinarySearch(array_order, 10);
 
-            
+
+            X=Eratosthene.EratosthenesSieve(N);
+
+
 
             // Keep the console window open
             Console.WriteLine("----------------------");

@@ -66,14 +66,13 @@ namespace Serie_I
                 result_division = a / b;
                 reste = result_division * b - a;  // j'aurais pu faire avec modulo %
                 Console.WriteLine($" resultat de la division entiere {a} = {b} * {result_division} + {reste} ");
-                break;
             }
             else
             {
-                Console.WriteLine($" result {a} {operation} {b} impossible ");
+                Console.WriteLine($" result {a} / {b} impossible ");
             }
-            
-            
+
+
         }
 
         public static void Pow(int a, int b)
@@ -81,15 +80,15 @@ namespace Serie_I
             double puissance;
             if (b > 0)
             {
-                puissance = a^b;
+                puissance = a ^ b;
                 Console.WriteLine($" {a} ^ {b} = {puissance} ");
             }
-            else 
+            else
             {
                 Console.WriteLine($" Operation {a} ^ {b} est invalide ");
-                    }
+            }
+        }
     }
-}
 }
 
 
